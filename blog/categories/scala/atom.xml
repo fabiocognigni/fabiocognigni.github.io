@@ -1,101 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Let's Blog!</title>
-  <meta name="author" content="Fabero">
-
-  
-  <meta name="description" content="Q&amp;A with Martin Odersky The big day has finally arrived!
-Today we had the honor to have Martin Odersky at our office for a Q&amp;A session. The &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://fabiocognigni.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Let's Blog!" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Let's Blog!</a></h1>
-  
-    <h2>Free thoughts around Software Engineering.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:fabiocognigni.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Category: Scala | Let's Blog!]]></title>
+  <link href="http://fabiocognigni.github.io/blog/categories/scala/atom.xml" rel="self"/>
+  <link href="http://fabiocognigni.github.io/"/>
+  <updated>2014-05-21T10:20:17-04:00</updated>
+  <id>http://fabiocognigni.github.io/</id>
+  <author>
+    <name><![CDATA[Fabero]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2014/05/21/martin-odersky-visting-saks/">Martin Odersky Visting Saks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2014-05-21T10:15:06-04:00" pubdate data-updated="true">May 21<span>st</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>Q&amp;A with Martin Odersky</h2>
+  <entry>
+    <title type="html"><![CDATA[Martin Odersky Visting Saks]]></title>
+    <link href="http://fabiocognigni.github.io/blog/2014/05/21/martin-odersky-visting-saks/"/>
+    <updated>2014-05-21T10:15:06-04:00</updated>
+    <id>http://fabiocognigni.github.io/blog/2014/05/21/martin-odersky-visting-saks</id>
+    <content type="html"><![CDATA[<h2>Q&amp;A with Martin Odersky</h2>
 
 <p>The big day has finally arrived!
 Today we had the honor to have Martin Odersky at our office for a Q&amp;A session.</p>
@@ -126,68 +49,7 @@ His answer for the compiler performcances was an incredibly interesting trip und
 <p>The last point I want to report is the question that asked his opinion on the fact that Java is finally moving in the direction Scala took long time ago, mainly for its support of lambda expression and how the paths of Java and Scala will proceed in the long term. After joking on the fact that as of now almost only C++ was the language with no lambda expression other than Java, he pointed out how still Scala has a lot bigger conceptual space than lambda expressions mentioning the fact that in Scala functions have a type, Scala has implicits, multiple inheritance with mixin traits, pattern matching with case classes, etc. He also explained that according to the current roadmap a full support of Java 8 should be implemented in around one year (with Scala 2.12) even if probably Scala will maintain its own syntax for lambda expressions but overall performances will improve and their integration work Scala-Java will be much easier.</p>
 
 <p>These were just some highlights of a very interesting discussion that was an extremely useful checkpoint of where we are in this JVM ecosystem and what are the possible lines of evolutions for the future.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/05/21/martin-odersky-visting-saks/">Martin Odersky Visting Saks</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Fabero -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>
