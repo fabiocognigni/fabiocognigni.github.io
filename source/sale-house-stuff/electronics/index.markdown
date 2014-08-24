@@ -14,7 +14,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{{ 'guitar' | image_list }}
+{{ 'gallery_1' | image_list }}
 
 <br/>
 <br/>
@@ -26,4 +26,4 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{{ 'guitar' | image_list }}
+{{ 'gallery_1' | image_list }}
