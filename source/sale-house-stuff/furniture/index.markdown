@@ -12,14 +12,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-<table>
-    <tr>
-        <td>{% img ../images/galleries/guitar/IMG_3363.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3364.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3365.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3366.JPG 300 300 %}</td>
-    </tr>
-</table>
+{{ 'guitar' | image_list }}
 
 <br/>
 <br/>
@@ -31,11 +24,4 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-<table>
-    <tr>
-        <td>{% img ../images/galleries/guitar/IMG_3363.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3364.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3365.JPG 300 300 %}</td>
-        <td>{% img ../images/galleries/guitar/IMG_3366.JPG 300 300 %}</td>
-    </tr>
-</table>
+{{ 'guitar' | image_list }}
