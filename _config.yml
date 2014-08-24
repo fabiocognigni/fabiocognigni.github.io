@@ -98,3 +98,19 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: true
+
+# --------------------------------------  
+# Octopress gallery
+# --------------------------------------
+mini_magick:
+  guitar_thumbnail:
+    source: images/galleries/guitar
+    destination: images/galleries/guitar/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+#    guitar_medium:
+#      source: images/galleries/guitar
+#      destination: images/galleries/guitar/medium
+#      commands:
+#        - resize: "600x400"
