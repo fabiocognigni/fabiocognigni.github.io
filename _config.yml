@@ -114,3 +114,16 @@ mini_magick:
 #      destination: images/galleries/guitar/medium
 #      commands:
 #        - resize: "600x400"
+  vaporizer_thumbnail:
+    source: images/galleries/vaporizer
+    destination: images/galleries/vaporizer/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  sterilizer_thumbnail:
+    source: images/galleries/sterilizer
+    destination: images/galleries/sterilizer/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+

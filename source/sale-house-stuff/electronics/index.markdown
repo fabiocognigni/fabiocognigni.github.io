@@ -28,9 +28,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'vaporizer' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
