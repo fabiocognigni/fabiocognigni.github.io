@@ -7,23 +7,44 @@ footer: false
 
 <a href="/sale-house-stuff">Back</a>
 
-<h3>Item title</h3>
+<h3>TV Samsung</h3>
 
 * Brand: blah
 * Size: blah x blah
 * Sale Price: blah
 * Price new: blah
 
-{{ 'gallery_1' | image_list }}
+{% comment %} 
+{{ 'tv-samsung' | image_list }}
+{% endcomment %}
 
 <br/>
 <br/>
 
-<h3>Item title</h3>
+<h3>Vaporizer</h3>
 
 * Brand: blah
 * Size: blah x blah
 * Sale Price: blah
 * Price new: blah
 
-{{ 'gallery_1' | image_list }}
+{% comment %} 
+{{ 'vaporizer' | image_list }}
+{% endcomment %}
+
+<br/>
+<br/>
+
+<h3>Blender</h3>
+
+* Brand: blah
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{% comment %} 
+{{ 'blender' | image_list }}
+{% endcomment %}
+
+<br/>
+<br/>
