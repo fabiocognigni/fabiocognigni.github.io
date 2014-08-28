@@ -4,7 +4,7 @@ title: "Baby"
 header: false
 footer: false
 ---
-<a href="/sale-house-stuff">Back</a>
+<a href="/sale-house-stuff">< Back</a>
 
 <h3>Vaporizer</h3>
 
@@ -51,9 +51,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'play-carpet-1' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -177,20 +175,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
-{{ 'play-carpet-1' | image_list }}
-{% endcomment %}
-
-<br/>
-<br/>
-
-<h3>Play carpet</h3>
-
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
-
-{% comment %} 
 {{ 'play-carpet-2' | image_list }}
-{% endcomment %}
+
+
+<a href="/sale-house-stuff">< Back</a>

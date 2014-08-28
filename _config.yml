@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://fabiocognigni.github.io
-title: Let's Blog!
-subtitle: Free thoughts around Software Engineering.
+# title: Let's Blog!
+# subtitle: Free thoughts around Software Engineering.
 author: Fabero
 simple_search: https://www.google.com/search
 description:
@@ -126,4 +126,39 @@ mini_magick:
     commands:
       - thumbnail: "140x140^"
       - crop: "140x140-0x0"
-
+  play-yard_thumbnail:
+    source: images/galleries/play-yard
+    destination: images/galleries/play-yard/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  play-carpet-1_thumbnail:
+    source: images/galleries/play-carpet-1
+    destination: images/galleries/play-carpet-1/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  play-carpet-2_thumbnail:
+    source: images/galleries/play-carpet-2
+    destination: images/galleries/play-carpet-2/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"      
+  chest-drawers-white_thumbnail:
+    source: images/galleries/chest-drawers-white
+    destination: images/galleries/chest-drawers-white/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  chest-drawers-black_thumbnail:
+    source: images/galleries/chest-drawers-black
+    destination: images/galleries/chest-drawers-black/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"      
+  couch_thumbnail:
+    source: images/galleries/couch
+    destination: images/galleries/couch/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"

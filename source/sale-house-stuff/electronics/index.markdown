@@ -5,7 +5,7 @@ header: false
 footer: false
 ---
 
-<a href="/sale-house-stuff">Back</a>
+<a href="/sale-house-stuff">< Back</a>
 
 <h3>TV Samsung</h3>
 
@@ -44,5 +44,5 @@ footer: false
 {{ 'blender' | image_list }}
 {% endcomment %}
 
-<br/>
-<br/>
+
+<a href="/sale-house-stuff">< Back</a>

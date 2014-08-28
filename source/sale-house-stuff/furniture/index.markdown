@@ -3,7 +3,7 @@ layout: page
 title: "furniture"
 footer: false
 ---
-<a href="/sale-house-stuff">Back</a>
+<a href="/sale-house-stuff">< Back</a>
 
 <h3>Book Shelf</h3>
 
@@ -40,9 +40,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'couch' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -82,23 +80,19 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'chest-drawers-white' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
 
 <h3>Chest of drawers (black)</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Ikea Malm 4 drawers
+* 18 x 39 x 31 (inch.)
+* 45 $
+* http://www.ikea.com/us/en/catalog/products/70053924/#/50103345
 
-{% comment %} 
 {{ 'chest-drawers-black' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -127,3 +121,6 @@ footer: false
 {% comment %} 
 {{ 'night-table' | image_list }}
 {% endcomment %}
+
+
+<a href="/sale-house-stuff">< Back</a>
