@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Let's Blog!]]></title>
+  <title><![CDATA[]]></title>
   <link href="http://fabiocognigni.github.io/atom.xml" rel="self"/>
   <link href="http://fabiocognigni.github.io/"/>
-  <updated>2014-08-25T13:47:59-04:00</updated>
+  <updated>2014-08-27T20:09:57-04:00</updated>
   <id>http://fabiocognigni.github.io/</id>
   <author>
     <name><![CDATA[Fabero]]></name>
