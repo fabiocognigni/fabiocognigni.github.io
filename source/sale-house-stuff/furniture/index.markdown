@@ -7,10 +7,9 @@ footer: false
 
 <h3>Book Shelf</h3>
 
-* Brand: blah
+* Ikea 
 * Size: blah x blah
 * Sale Price: blah
-* Price new: blah
 
 {% comment %} 
 {{ 'bookshelf' | image_list }}
@@ -33,12 +32,12 @@ footer: false
 <br/>
 <br/>
 
-<h3>Couch</h3>
+<h3>Sofa</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Ikea Friheten corner sofa-bed 
+* 90 x 59 (inch)
+* 150 $
+* http://www.ikea.com/us/en/catalog/products/70243038/#/50242997
 
 {{ 'couch' | image_list }}
 
@@ -75,10 +74,9 @@ footer: false
 
 <h3>Chest of drawers (white)</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Ikea - 3 drawers
+* nn x mm x pp (inch.)
+* 35 $
 
 {{ 'chest-drawers-white' | image_list }}
 

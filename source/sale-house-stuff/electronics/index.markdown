@@ -9,14 +9,12 @@ footer: false
 
 <h3>TV Samsung</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Samsung LCD HDMI
+* 32 inch
+* 125 $
+* <a href="http://www.bhphotovideo.com/bnh/controller/home?O=&sku=765141&gclid=CPig7bvztcACFehj7Aod6hMAHw&Q=&is=REG&A=details" target="_blank">Details</a>
 
-{% comment %} 
-{{ 'tv-samsung' | image_list }}
-{% endcomment %}
+{{ 'tv' | image_list }}
 
 <br/>
 <br/>

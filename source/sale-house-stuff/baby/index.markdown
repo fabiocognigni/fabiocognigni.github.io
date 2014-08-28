@@ -168,6 +168,7 @@ footer: false
 <br/>
 <br/>
 
+{% comment %} 
 <h3>Play carpet</h3>
 
 * Brand: blah
@@ -176,6 +177,6 @@ footer: false
 * Price new: blah
 
 {{ 'play-carpet-2' | image_list }}
-
+{% endcomment %}
 
 <a href="/sale-house-stuff">< Back</a>
