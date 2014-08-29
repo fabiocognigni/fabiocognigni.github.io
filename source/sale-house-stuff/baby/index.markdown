@@ -18,6 +18,42 @@ footer: false
 <br/>
 <br/>
 
+<h3>High Chair</h3>
+
+* Ikea
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{{ 'high-chair' | image_list }}
+
+<br/>
+<br/>
+
+<h3>Desk</h3>
+
+* Ikea
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{{ 'baby-desk' | image_list }}
+
+<br/>
+<br/>
+
+<h3>Changing Pad with Covers</h3>
+
+* Ikea
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{{ 'changing-pad' | image_list }}
+
+<br/>
+<br/>
+
 <h3>Vaporizer</h3>
 
 * Brand: blah

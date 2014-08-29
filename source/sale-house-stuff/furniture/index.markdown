@@ -89,16 +89,14 @@ footer: false
 <br/>
 <br/>
 
-<h3>Chest of drawers (small with plastic drawers)</h3>
+<h3>Chest of drawers</h3>
 
 * Brand: blah
 * Size: blah x blah
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'chest-drawers-small' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -110,9 +108,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'night-table' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>

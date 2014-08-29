@@ -191,4 +191,34 @@ mini_magick:
     destination: images/galleries/table/thumbs
     commands:
       - thumbnail: "140x140^"
-      - crop: "140x140-0x0"      
+      - crop: "140x140-0x0"
+  high-chair_thumbnail:
+    source: images/galleries/high-chair
+    destination: images/galleries/high-chair/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  baby-desk_thumbnail:
+    source: images/galleries/baby-desk
+    destination: images/galleries/baby-desk/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  night-table_thumbnail:
+    source: images/galleries/night-table
+    destination: images/galleries/night-table/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  chest-drawers-small_thumbnail:
+    source: images/galleries/chest-drawers-small
+    destination: images/galleries/chest-drawers-small/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  changing-pad_thumbnail:
+    source: images/galleries/changing-pad
+    destination: images/galleries/changing-pad/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"            
