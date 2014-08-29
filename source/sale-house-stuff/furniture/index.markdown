@@ -5,29 +5,25 @@ footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
 
-<h3>Book Shelf</h3>
+<h3>Bookcase and TV storage</h3>
 
 * Ikea 
 * Size: blah x blah
 * Sale Price: blah
 
-{% comment %} 
-{{ 'bookshelf' | image_list }}
-{% endcomment %}
+{{ 'bookcase' | image_list }}
 
 <br/>
 <br/>
 
-<h3>Dining table with 5 chairs</h3>
+<h3>Dining table with chairs</h3>
 
-* Brand: blah
+* Ikea
 * Size: blah x blah
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'table' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -60,14 +56,12 @@ footer: false
 
 <h3>Bed</h3>
 
-* Brand: blah
+* Sleepy's
 * Size: blah x blah
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'bed' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -119,6 +113,18 @@ footer: false
 {% comment %} 
 {{ 'night-table' | image_list }}
 {% endcomment %}
+
+<br/>
+<br/>
+
+<h3>Crib</h3>
+
+* Ikea
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{{ 'crib' | image_list }}
 
 
 <a href="/sale-house-stuff">< Back</a>

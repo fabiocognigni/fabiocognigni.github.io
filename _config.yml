@@ -167,4 +167,28 @@ mini_magick:
     destination: images/galleries/tv/thumbs
     commands:
       - thumbnail: "140x140^"
+      - crop: "140x140-0x0" 
+  bookcase_thumbnail:
+    source: images/galleries/bookcase
+    destination: images/galleries/bookcase/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  bed_thumbnail:
+    source: images/galleries/bed
+    destination: images/galleries/bed/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  crib_thumbnail:
+    source: images/galleries/crib
+    destination: images/galleries/crib/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  table_thumbnail:
+    source: images/galleries/table
+    destination: images/galleries/table/thumbs
+    commands:
+      - thumbnail: "140x140^"
       - crop: "140x140-0x0"      

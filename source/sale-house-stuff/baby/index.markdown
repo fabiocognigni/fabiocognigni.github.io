@@ -6,6 +6,18 @@ footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
 
+<h3>Crib</h3>
+
+* Ikea
+* Size: blah x blah
+* Sale Price: blah
+* Price new: blah
+
+{{ 'crib' | image_list }}
+
+<br/>
+<br/>
+
 <h3>Vaporizer</h3>
 
 * Brand: blah
