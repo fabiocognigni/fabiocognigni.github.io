@@ -9,7 +9,7 @@ footer: false
 
 * Ikea 
 * Size: blah x blah
-* Sale Price: blah
+* 80 $
 
 {{ 'bookcase' | image_list }}
 
@@ -21,7 +21,7 @@ footer: false
 * Ikea
 * Size: blah x blah
 * Sale Price: blah
-* Price new: blah
+* 90 $
 
 {{ 'table' | image_list }}
 
@@ -58,8 +58,7 @@ footer: false
 
 * Sleepy's
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 200 $
 
 {{ 'bed' | image_list }}
 
@@ -93,8 +92,7 @@ footer: false
 
 * Brand: blah
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 5 $
 
 {{ 'chest-drawers-small' | image_list }}
 
@@ -105,20 +103,18 @@ footer: false
 
 * Brand: blah
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 5 $
 
 {{ 'night-table' | image_list }}
 
 <br/>
 <br/>
 
-<h3>Crib</h3>
+<h3>Crib with matress</h3>
 
 * Ikea
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 50 $
 
 {{ 'crib' | image_list }}
 

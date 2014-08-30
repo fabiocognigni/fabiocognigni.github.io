@@ -6,12 +6,11 @@ footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
 
-<h3>Crib</h3>
+<h3>Crib with matress</h3>
 
 * Ikea
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 50 $
 
 {{ 'crib' | image_list }}
 
@@ -22,8 +21,7 @@ footer: false
 
 * Ikea
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 40 $
 
 {{ 'high-chair' | image_list }}
 
@@ -34,22 +32,31 @@ footer: false
 
 * Ikea
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 40 $
 
 {{ 'baby-desk' | image_list }}
 
 <br/>
 <br/>
 
-<h3>Changing Pad with Covers</h3>
+<h3>Changing Pad with 2 Covers</h3>
 
 * Ikea
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 20 $
 
 {{ 'changing-pad' | image_list }}
+
+<br/>
+<br/>
+
+<h3>Play Yard</h3>
+
+* Brand: blah
+* Size: blah x blah
+* 50 $
+
+{{ 'play-yard' | image_list }}
 
 <br/>
 <br/>
@@ -58,8 +65,7 @@ footer: false
 
 * Brand: blah
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 10 $
 
 {{ 'vaporizer' | image_list }}
 
@@ -96,8 +102,7 @@ footer: false
 
 * Brand: blah
 * Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 25 $
 
 {{ 'play-carpet-1' | image_list }}
 
@@ -113,20 +118,6 @@ footer: false
 
 {% comment %} 
 {{ 'stroller' | image_list }}
-{% endcomment %}
-
-<br/>
-<br/>
-
-<h3>Play Yard</h3>
-
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
-
-{% comment %} 
-{{ 'play-yard' | image_list }}
 {% endcomment %}
 
 <br/>
