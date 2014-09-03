@@ -8,7 +8,7 @@ footer: false
 <h3>Bookcase and TV storage</h3>
 
 * Ikea 
-* Size: blah x blah
+* Size: 15" x 73" x 73"
 * 80 $
 
 {{ 'bookcase' | image_list }}
@@ -19,8 +19,7 @@ footer: false
 <h3>Dining table with chairs</h3>
 
 * Ikea
-* Size: blah x blah
-* Sale Price: blah
+* Size: 43" x 43" 
 * 90 $
 
 {{ 'table' | image_list }}
@@ -31,15 +30,16 @@ footer: false
 <h3>Sofa</h3>
 
 * Ikea Friheten corner sofa-bed 
-* 90 x 59 (inch)
+* 90" x 59"
 * 150 $
-* http://www.ikea.com/us/en/catalog/products/70243038/#/50242997
+* <a href="http://www.ikea.com/us/en/catalog/products/70243038/#/50242997" target="_blank">Details</a>
 
 {{ 'couch' | image_list }}
 
 <br/>
 <br/>
 
+{% comment %} 
 <h3>Mini table</h3>
 
 * Brand: blah
@@ -47,17 +47,16 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'mini-table' | image_list }}
+
+<br/>
+<br/>
 {% endcomment %}
 
-<br/>
-<br/>
+<h3>Bed (mattress plus frame)</h3>
 
-<h3>Bed</h3>
-
-* Sleepy's
-* Size: blah x blah
+* Sleepy's Queen size
+* 60" x 80"
 * 200 $
 
 {{ 'bed' | image_list }}
@@ -68,7 +67,7 @@ footer: false
 <h3>Chest of drawers (white)</h3>
 
 * Ikea - 3 drawers
-* nn x mm x pp (inch.)
+* 16" x 32" x 39" (lenght x width x height)
 * 35 $
 
 {{ 'chest-drawers-white' | image_list }}
@@ -79,9 +78,9 @@ footer: false
 <h3>Chest of drawers (black)</h3>
 
 * Ikea Malm 4 drawers
-* 18 x 39 x 31 (inch.)
+* 19" x 32" x 39" (lenght x width x height)
 * 45 $
-* http://www.ikea.com/us/en/catalog/products/70053924/#/50103345
+* <a href="http://www.ikea.com/us/en/catalog/products/70053924/#/50103345" target="_blank">Details</a>
 
 {{ 'chest-drawers-black' | image_list }}
 
@@ -90,8 +89,7 @@ footer: false
 
 <h3>Chest of drawers</h3>
 
-* Brand: blah
-* Size: blah x blah
+* 16" x 22" x 24" (lenght x width x height)
 * 5 $
 
 {{ 'chest-drawers-small' | image_list }}
@@ -101,8 +99,7 @@ footer: false
 
 <h3>Night table / Bedside</h3>
 
-* Brand: blah
-* Size: blah x blah
+* 24" x 18" x 23" (lenght x width x height)
 * 5 $
 
 {{ 'night-table' | image_list }}
@@ -110,10 +107,12 @@ footer: false
 <br/>
 <br/>
 
-<h3>Crib with matress</h3>
+<h3>Crib (frame plus matress)</h3>
 
 * Ikea
-* Size: blah x blah
+* Adjustable 2 heights; one side removable
+* 0 - 4 years
+* 30" x 54" x 35" (lenght x width x height)
 * 50 $
 
 {{ 'crib' | image_list }}

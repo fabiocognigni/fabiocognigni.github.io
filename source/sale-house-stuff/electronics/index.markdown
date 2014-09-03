@@ -19,12 +19,10 @@ footer: false
 <br/>
 <br/>
 
-<h3>Vaporizer</h3>
+<h3>Vaporizer / Humidifier</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Vicks Pediatric Warm Steam Vaporizer / Humidifier
+* 10 $
 
 {{ 'vaporizer' | image_list }}
 

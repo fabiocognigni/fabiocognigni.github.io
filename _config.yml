@@ -221,4 +221,16 @@ mini_magick:
     destination: images/galleries/changing-pad/thumbs
     commands:
       - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  bouncer_thumbnail:
+    source: images/galleries/bouncer
+    destination: images/galleries/bouncer/thumbs
+    commands:
+      - thumbnail: "140x140^"
+      - crop: "140x140-0x0"
+  stroller_thumbnail:
+    source: images/galleries/stroller
+    destination: images/galleries/stroller/thumbs
+    commands:
+      - thumbnail: "140x140^"
       - crop: "140x140-0x0"            

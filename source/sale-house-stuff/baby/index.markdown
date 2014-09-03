@@ -6,10 +6,12 @@ footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
 
-<h3>Crib with matress</h3>
+<h3>Crib (frame plus matress)</h3>
 
 * Ikea
-* Size: blah x blah
+* Adjustable 2 heights; one side removable
+* 0 - 4 years
+* 30" x 54" x 35" (lenght x width x height)
 * 50 $
 
 {{ 'crib' | image_list }}
@@ -19,8 +21,9 @@ footer: false
 
 <h3>High Chair</h3>
 
-* Ikea
-* Size: blah x blah
+* Fisher-Price
+* Reclining
+* 4 adjustable heights
 * 40 $
 
 {{ 'high-chair' | image_list }}
@@ -30,8 +33,7 @@ footer: false
 
 <h3>Desk</h3>
 
-* Ikea
-* Size: blah x blah
+* 20" x 31" x 19" (lenght x width x height)
 * 40 $
 
 {{ 'baby-desk' | image_list }}
@@ -41,8 +43,6 @@ footer: false
 
 <h3>Changing Pad with 2 Covers</h3>
 
-* Ikea
-* Size: blah x blah
 * 20 $
 
 {{ 'changing-pad' | image_list }}
@@ -52,19 +52,18 @@ footer: false
 
 <h3>Play Yard</h3>
 
-* Brand: blah
-* Size: blah x blah
+* 36" x 36"
 * 50 $
+* <a href="http://www.amazon.com/Delta-Childrens-Time-Play-Yard/dp/B00DHKEB14/ref=sr_1_236?s=baby-products&ie=UTF8&qid=1406496210&sr=1-236&keywords=baby+play+yards" target="_blank">Details</a>
 
 {{ 'play-yard' | image_list }}
 
 <br/>
 <br/>
 
-<h3>Vaporizer</h3>
+<h3>Vaporizer / Humidifier</h3>
 
-* Brand: blah
-* Size: blah x blah
+* Vicks Pediatric Warm Steam Vaporizer / Humidifier
 * 10 $
 
 {{ 'vaporizer' | image_list }}
@@ -74,13 +73,11 @@ footer: false
 
 <h3>Steam Sterilizer</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 25 $
 
 {{ 'sterilizer' | image_list }}
 
+{% comment %} 
 <br/>
 <br/>
 
@@ -91,7 +88,6 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'bottle-warmer' | image_list }}
 {% endcomment %}
 
@@ -100,8 +96,7 @@ footer: false
 
 <h3>Play carpet</h3>
 
-* Brand: blah
-* Size: blah x blah
+* Music and lights
 * 25 $
 
 {{ 'play-carpet-1' | image_list }}
@@ -111,43 +106,20 @@ footer: false
 
 <h3>Stroller</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Chicco cortina
 
-{% comment %} 
 {{ 'stroller' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
 
 <h3>Bouncer</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* 25 $
 
-{% comment %} 
 {{ 'bouncer' | image_list }}
-{% endcomment %}
-
-<br/>
-<br/>
-
-<h3>Changing pad with covers</h3>
-
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
 
 {% comment %} 
-{{ 'changing-pad' | image_list }}
-{% endcomment %}
-
 <br/>
 <br/>
 
@@ -158,9 +130,7 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'walker-1' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
@@ -172,13 +142,13 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'walker-2' | image_list }}
+
+<br/>
+<br/>
 {% endcomment %}
 
-<br/>
-<br/>
-
+{% comment %} 
 <h3>Tricycle</h3>
 
 * Brand: blah
@@ -186,13 +156,13 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'tricycle' | image_list }}
+
+<br/>
+<br/>
 {% endcomment %}
 
-<br/>
-<br/>
-
+{% comment %} 
 <h3>Wood Box Toy</h3>
 
 * Brand: blah
@@ -200,12 +170,11 @@ footer: false
 * Sale Price: blah
 * Price new: blah
 
-{% comment %} 
 {{ 'wood-box-toy' | image_list }}
-{% endcomment %}
 
 <br/>
 <br/>
+{% endcomment %}
 
 {% comment %} 
 <h3>Play carpet</h3>
