@@ -68,6 +68,7 @@ footer: false
 
 {{ 'vaporizer' | image_list }}
 
+{% comment %} 
 <br/>
 <br/>
 
@@ -76,6 +77,7 @@ footer: false
 * 25 $
 
 {{ 'sterilizer' | image_list }}
+{% endcomment %}
 
 {% comment %} 
 <br/>
