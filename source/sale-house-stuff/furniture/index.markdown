@@ -5,6 +5,8 @@ footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
 
+{% comment %} 
+-- SOLD to Mike
 <h3>Bookcase and TV storage</h3>
 
 * Ikea 
@@ -15,6 +17,7 @@ footer: false
 
 <br/>
 <br/>
+{% endcomment %} 
 
 <h3>Dining table with chairs</h3>
 
@@ -71,19 +74,19 @@ on Sept 4th she gave us 80$ - she will pick it up in a week or 2
 <br/>
 
 <h3>Chest of drawers (white)</h3>
+-- SOLD to Delphina
 
 * Ikea - 3 drawers
 * 16" x 32" x 39" (lenght x width x height)
 * 35 $
 
-{{ 'chest-drawers-white' | image_list }}
-{% endcomment %} 
+{{ 'chest-drawers-white' | image_list }} 
 
 <br/>
 <br/>
 
 <h3>Chest of drawers</h3>
-
+-- SOLD to Mike
 * Ikea Malm 4 drawers
 * 19" x 32" x 39" (lenght x width x height)
 * 45 $
@@ -95,11 +98,12 @@ on Sept 4th she gave us 80$ - she will pick it up in a week or 2
 <br/>
 
 <h3>Chest of drawers</h3>
-
+-- SOLD
 * 16" x 22" x 24" (lenght x width x height)
 * 5 $
 
 {{ 'chest-drawers-small' | image_list }}
+{% endcomment %}
 
 <br/>
 <br/>

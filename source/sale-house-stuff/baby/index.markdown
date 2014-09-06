@@ -31,6 +31,7 @@ footer: false
 <br/>
 <br/>
 
+{% comment %} 
 <h3>Desk</h3>
 
 * 20" x 31" x 19" (lenght x width x height)
@@ -40,6 +41,7 @@ footer: false
 
 <br/>
 <br/>
+{% endcomment %} 
 
 <h3>Changing Pad with 2 Covers</h3>
 

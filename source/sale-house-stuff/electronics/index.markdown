@@ -31,14 +31,12 @@ footer: false
 
 <h3>Blender</h3>
 
-* Brand: blah
-* Size: blah x blah
-* Sale Price: blah
-* Price new: blah
+* Hamilton Beach Blender
+* 20 $
 
-{% comment %} 
 {{ 'blender' | image_list }}
-{% endcomment %}
 
+<br/>
+<br/>
 
 <a href="/sale-house-stuff">< Back</a>
