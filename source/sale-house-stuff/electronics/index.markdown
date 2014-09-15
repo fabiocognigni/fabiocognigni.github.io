@@ -7,6 +7,7 @@ footer: false
 
 <a href="/sale-house-stuff">< Back</a>
 
+{% comment %}
 <h3>TV Samsung</h3>
 
 * Samsung LCD HDMI
@@ -18,6 +19,7 @@ footer: false
 
 <br/>
 <br/>
+{% endcomment %}
 
 <h3>Vaporizer / Humidifier</h3>
 

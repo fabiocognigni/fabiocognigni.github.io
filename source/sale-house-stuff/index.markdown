@@ -9,7 +9,7 @@ We are moving to UK!<br/>
 Follow the links below to see all the stuff we are selling.<br/>
 You can click on each image to see it larger.<br/>
 
-Hope you'll find something you like!<br/>
+Please spread the word around if you know anyone that might be interested or let us know if there is something you like/need!<br/>
 Thanks!
 
 Our contacts:<br/>

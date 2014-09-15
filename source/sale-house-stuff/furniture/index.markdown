@@ -4,9 +4,8 @@ title: "furniture"
 footer: false
 ---
 <a href="/sale-house-stuff">< Back</a>
-
 {% comment %} 
--- SOLD to Mike
+SOLD to Manuel Gonzales via CraigList for 70$
 <h3>Bookcase and TV storage</h3>
 
 * Ikea 
@@ -34,7 +33,8 @@ footer: false
 <h3>Sofa</h3>
 
 -- SOLD to Annie (716-640-3974) 
-on Sept 4th she gave us 80$ - she will pick it up in a week or 2
+on Sept 4th she gave us 80$
+she picked it up on Sept 10th giving other 10$
 
 * Ikea Friheten corner sofa-bed 
 * 90" x 59"
@@ -66,6 +66,7 @@ on Sept 4th she gave us 80$ - she will pick it up in a week or 2
 * Sleepy's Queen size
 * 60" x 80"
 * 200 $
+* Available: October 20th
 
 {{ 'bed' | image_list }}
 
@@ -81,19 +82,23 @@ on Sept 4th she gave us 80$ - she will pick it up in a week or 2
 * 35 $
 
 {{ 'chest-drawers-white' | image_list }} 
+{% endcomment %}
 
+{% comment %}
 <br/>
 <br/>
 
 <h3>Chest of drawers</h3>
--- SOLD to Mike
+
 * Ikea Malm 4 drawers
 * 19" x 32" x 39" (lenght x width x height)
 * 45 $
 * <a href="http://www.ikea.com/us/en/catalog/products/70053924/#/50103345" target="_blank">Details</a>
 
 {{ 'chest-drawers-black' | image_list }}
+{% endcomment %}
 
+{% comment %}
 <br/>
 <br/>
 
@@ -125,6 +130,7 @@ on Sept 4th she gave us 80$ - she will pick it up in a week or 2
 * 0 - 4 years
 * 30" x 54" x 35" (lenght x width x height)
 * 50 $
+* Available: October 20th
 
 {{ 'crib' | image_list }}
 
