@@ -13,6 +13,7 @@ footer: false
 * 0 - 4 years
 * 30" x 54" x 35" (lenght x width x height)
 * 50 $
+* Available starting from **October 20th**
 
 {{ 'crib' | image_list }}
 

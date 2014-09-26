@@ -66,7 +66,7 @@ she picked it up on Sept 10th giving other 10$
 * Sleepy's Queen size
 * 60" x 80"
 * 200 $
-* Available: October 20th
+* Available starting from **October 20th**
 
 {{ 'bed' | image_list }}
 
