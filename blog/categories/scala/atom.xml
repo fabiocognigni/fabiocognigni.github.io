@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Scala | ]]></title>
   <link href="http://fabiocognigni.github.io/blog/categories/scala/atom.xml" rel="self"/>
   <link href="http://fabiocognigni.github.io/"/>
-  <updated>2015-06-06T19:57:35+01:00</updated>
+  <updated>2015-06-06T20:37:23+01:00</updated>
   <id>http://fabiocognigni.github.io/</id>
   <author>
     <name><![CDATA[Fabero]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Q&A with Martin Odersky at HBC Digital]]></title>
-    <link href="http://fabiocognigni.github.io/blog/2014/05/21/martin-odersky-visiting-saks/"/>
+    <link href="http://fabiocognigni.github.io/blog/2014/05/21/qa-martin-odersky/"/>
     <updated>2014-05-21T15:15:06+01:00</updated>
-    <id>http://fabiocognigni.github.io/blog/2014/05/21/martin-odersky-visiting-saks</id>
+    <id>http://fabiocognigni.github.io/blog/2014/05/21/qa-martin-odersky</id>
     <content type="html"><![CDATA[<p>Big day here at HBC Digital: we hosted a Q&amp;A session with Martin Odersky at our offices in NYC.
 When you have only one hour you have to choose really well the questions to ask among the hundreds you would have.
 An important thing to keep in mind is that you are not talking with another web developer but with a &ldquo;compiler guy&rdquo; (as he defined himself). Indeed as you probably know already he wrote the compilers for modula 2, modula 3 &hellip; up to the javac Java compiler before writing Scala.
@@ -59,7 +59,7 @@ His answer for the compiler performances was an incredibly interesting trip unde
 
 <p>These were just some highlights of a very interesting discussion that was an extremely useful checkpoint of where we are in this JVM ecosystem and what are the possible lines of evolutions for the future.</p>
 
-<p>Things like this definitely <strong>make your day</strong>!</p>
+<p>Things like this definitely <strong>makes your day</strong>!</p>
 ]]></content>
   </entry>
   
