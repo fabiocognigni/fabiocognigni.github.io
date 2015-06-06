@@ -8,7 +8,8 @@ categories: Scala
 
 ---
 
-Big day here at HBC Digital: we hosted a Q&A session with Martin Odersky at our offices in NYC.
+Big day here at [HBC Digital](https://twitter.com/hbcdigital): we hosted a Q&A session with Martin Odersky at our offices in NYC.
+
 When you have only one hour you have to choose really well the questions to ask among the hundreds you would have.
 An important thing to keep in mind is that you are not talking with another web developer but with a "compiler guy" (as he defined himself). Indeed as you probably know already he wrote the compilers for modula 2, modula 3 ... up to the javac Java compiler before writing Scala.
 More in general it is quite impressive how he was able to apply a solid academic analysis approach to real industrial problems.
