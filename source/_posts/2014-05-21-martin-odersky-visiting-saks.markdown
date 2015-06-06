@@ -14,6 +14,8 @@ Today we had the honor to have Martin Odersky at our office for a Q&A session.
 
 The first impact after start chatting is weird and exciting at the same time: you realize all of a sudden that you two work in two different worlds. You build software architectures using tools he implemented same way a construction builder uses trucks, cranes, etc.
 
+<!--more-->
+
 Indeed he defines himself a "compiler guy" and it definitely is THE "compiler guy": he wrote compilers for modula 2, modula 3 ... up to the javac Java compiler! And maybe now it's easier to understand why a person with this background can say "Java stinks! ...but the JVM is still a wonderful piece of software ... you know what? I'll create a new language on top of it!".
 
 After a super early breakfast (8.30!) we started bombing Dr. Odersky with questions and there were really interesting ones that made the discussion covering "hot" topics like coding philosophies, functional and object-oriented programming living together, comparisons with other emerging languages, Java 8 and performances.
