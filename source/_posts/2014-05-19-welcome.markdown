@@ -1,0 +1,11 @@
+---
+layout: post
+title: "welcome"
+date: 2014-05-19 17:51:19 +0100
+comments: true
+categories:
+---
+
+Why this blog?
+
+Basically because if you love Open Source it means you love sharing your code but also the experiences (good and bad!) behind it, tips, lessons learned ... and a blog is a great way to do so!

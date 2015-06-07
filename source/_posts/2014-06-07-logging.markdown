@@ -1,0 +1,55 @@
+---
+layout: post
+title: "logging"
+date: 2014-06-07 12:49:07 +0100
+comments: true
+categories:
+---
+
+Logs are one of the few ways to observe how your system is behaving at runtime and an invaluable help to troubleshoot issues so you better want to organize them properly.
+
+Having too chatty logs means having lots of visibility but also struggling to find what you are really looking for (even with awesome tools like Splunk and Elastic search that have to index too much data).
+
+Beyond the obvious common sense rules to choose at which logging level you should log a certain event/data, here  they are few best practices that worked really well in my experience.
+
+<!--more-->
+
+### Logging input and output data
+
+I use to log all the data coming in and all results produced at **DEBUG** level.
+
+This makes these verbose logs normally not being produced (keeping the default at **INFO**) but still available by (temporarily) lowering the log level to DEBUG when you "smell" the system is not behaving properly.
+
+This turns out to be very helpful to investigate issues since it provides you directly the input data to reproduce a production issue in a test environment.
+
+For example I used this approach in a suite of REST APIs for validation and processing of orders: I am logging at **DEBUG level** **all the API HTTP request and responses** contents and also all the request/responses when this system makes any external call to other services.
+
+Ah! Don't forget to make sure you **obfuscate** any **sensitive data** if they are present: credit cards info, passwords, etc... .
+
+### Logging errors
+
+When you are handling an error in your code always make sure:
+
+* log it at **ERROR** level;
+* log the complete stack trace of the error;
+* log any data in scope in that point of execution: this will be an incredible help to be able to reproduce the issue.
+
+### Changing log level dynamically
+
+Logging libraries like Logback (and Log4J also) lets you change log level at runtime without having to bring down and restart the application.
+
+That is a very powerful feature you can use for example to turn the log level to DEBUG when a certain issue is happening in production. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.
+
+The ways you can expose this operation can be different and depends on the type of application you are working on: just a restricted access web page can be enough or I also used to implement a specific HTTP endpoint when the application consisted of a REST service.
+
+### Use conventions on the format
+
+If you use conventions on how you log domain specific data and errors it will be much easier to retrieve them (both for a human and for automated indexing systems).
+
+For example if I'm logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I'm doing that: for example something like: "Response " - endpoint name - http status code - body .
+
+### Make a distinction between logs and metrics
+
+Leave out from log files what actually represents more **metrics** and/or **analytics** data that should be handled using more powerful tools (for example **StatsD/Graphite**) to aggregate and visualize them - talking about this would require another post.
+
+Examples of this data are hit counters, error counters, execution times, order amounts, ... .
