@@ -4,7 +4,7 @@
   <title><![CDATA[]]></title>
   <link href="http://fabiocognigni.github.io/atom.xml" rel="self"/>
   <link href="http://fabiocognigni.github.io/"/>
-  <updated>2015-06-06T20:40:11+01:00</updated>
+  <updated>2015-06-07T19:20:39+01:00</updated>
   <id>http://fabiocognigni.github.io/</id>
   <author>
     <name><![CDATA[Fabero]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[logging]]></title>
+    <link href="http://fabiocognigni.github.io/blog/2014/06/07/logging/"/>
+    <updated>2014-06-07T12:49:07+01:00</updated>
+    <id>http://fabiocognigni.github.io/blog/2014/06/07/logging</id>
+    <content type="html"><![CDATA[<p>Logs are one of the few ways to observe how your system is behaving at runtime and an invaluable help to troubleshoot issues so you better want to organize them properly.</p>
+
+<p>Having too chatty logs means having lots of visibility but also struggling to find what you are really looking for (even with awesome tools like Splunk and Elastic search that have to index too much data).</p>
+
+<p>Beyond the obvious common sense rules to choose at which logging level you should log a certain event/data, here  they are few best practices that worked really well in my experience.</p>
+
+<!--more-->
+
+
+<h3>Logging input and output data</h3>
+
+<p>I use to log all the data coming in and all results produced at <strong>DEBUG</strong> level.</p>
+
+<p>This makes these verbose logs normally not being produced (keeping the default at <strong>INFO</strong>) but still available by (temporarily) lowering the log level to DEBUG when you &ldquo;smell&rdquo; the system is not behaving properly.</p>
+
+<p>This turns out to be very helpful to investigate issues since it provides you directly the input data to reproduce a production issue in a test environment.</p>
+
+<p>For example I used this approach in a suite of REST APIs for validation and processing of orders: I am logging at <strong>DEBUG level</strong> <strong>all the API HTTP request and responses</strong> contents and also all the request/responses when this system makes any external call to other services.</p>
+
+<p>Ah! Don&rsquo;t forget to make sure you <strong>obfuscate</strong> any <strong>sensitive data</strong> if they are present: credit cards info, passwords, etc&hellip; .</p>
+
+<h3>Logging errors</h3>
+
+<p>When you are handling an error in your code always make sure:</p>
+
+<ul>
+<li>log it at <strong>ERROR</strong> level;</li>
+<li>log the complete stack trace of the error;</li>
+<li>log any data in scope in that point of execution: this will be an incredible help to be able to reproduce the issue.</li>
+</ul>
+
+
+<h3>Changing log level dynamically</h3>
+
+<p>Logging libraries like Logback (and Log4J also) lets you change log level at runtime without having to bring down and restart the application.</p>
+
+<p>That is a very powerful feature you can use for example to turn the log level to DEBUG when a certain issue is happening in production. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.</p>
+
+<p>The ways you can expose this operation can be different and depends on the type of application you are working on: just a restricted access web page can be enough or I also used to implement a specific HTTP endpoint when the application consisted of a REST service.</p>
+
+<h3>Use conventions on the format</h3>
+
+<p>If you use conventions on how you log domain specific data and errors it will be much easier to retrieve them (both for a human and for automated indexing systems).</p>
+
+<p>For example if I&rsquo;m logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I&rsquo;m doing that: for example something like: &ldquo;Response &rdquo; &ndash; endpoint name &ndash; http status code &ndash; body .</p>
+
+<h3>Make a distinction between logs and metrics</h3>
+
+<p>Leave out from log files what actually represents more <strong>metrics</strong> and/or <strong>analytics</strong> data that should be handled using more powerful tools (for example <strong>StatsD/Graphite</strong>) to aggregate and visualize them &ndash; talking about this would require another post.</p>
+
+<p>Examples of this data are hit counters, error counters, execution times, order amounts, &hellip; .</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Q&A with Martin Odersky at HBC Digital]]></title>
@@ -61,6 +120,17 @@ His answer for the compiler performances was an incredibly interesting trip unde
 <p>These were just some highlights of a very interesting discussion that was an extremely useful checkpoint of where we are in this JVM ecosystem and what are the possible lines of evolutions for the future.</p>
 
 <p>Things like this definitely <strong>makes your day</strong>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[welcome]]></title>
+    <link href="http://fabiocognigni.github.io/blog/2014/05/19/welcome/"/>
+    <updated>2014-05-19T17:51:19+01:00</updated>
+    <id>http://fabiocognigni.github.io/blog/2014/05/19/welcome</id>
+    <content type="html"><![CDATA[<p>Why this blog?</p>
+
+<p>Basically because if you love Open Source it means you love sharing your code but also the experiences (good and bad!) behind it, tips, lessons learned &hellip; and a blog is a great way to do so!</p>
 ]]></content>
   </entry>
   
