@@ -4,7 +4,7 @@
   <title><![CDATA[]]></title>
   <link href="http://fabiocognigni.github.io/atom.xml" rel="self"/>
   <link href="http://fabiocognigni.github.io/"/>
-  <updated>2015-06-07T19:20:39+01:00</updated>
+  <updated>2015-06-11T22:53:23+01:00</updated>
   <id>http://fabiocognigni.github.io/</id>
   <author>
     <name><![CDATA[Fabero]]></name>
@@ -41,20 +41,65 @@
 
 <h3>Logging errors</h3>
 
-<p>When you are handling an error in your code always make sure:</p>
+<p>Please never do this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="k">try</span><span class="o">{</span>
+</span><span class='line'>  <span class="o">...</span>
+</span><span class='line'><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">YourException</span> <span class="n">exc</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">LOGGER</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">&quot;An error happened!&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A bit better (at least you&rsquo;ll have the complete stack trace of the exception):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="k">try</span><span class="o">{</span>
+</span><span class='line'>  <span class="o">...</span>
+</span><span class='line'><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">YourException</span> <span class="n">exc</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">LOGGER</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">&quot;An error happened!&quot;</span><span class="o">,</span> <span class="n">exc</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Much better (you&rsquo;ll be able to see the full stack trace of the exception and data that caused it):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="k">try</span><span class="o">{</span>
+</span><span class='line'>  <span class="o">...</span>
+</span><span class='line'><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">YourException</span> <span class="n">exc</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">LOGGER</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">&quot;An error happened while processing: &quot;</span> <span class="o">+</span> <span class="n">inputData</span><span class="o">,</span> <span class="n">exc</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To summarize: when you are handling an error in your code always make sure:</p>
 
 <ul>
 <li>log it at <strong>ERROR</strong> level;</li>
 <li>log the complete stack trace of the error;</li>
-<li>log any data in scope in that point of execution: this will be an incredible help to be able to reproduce the issue.</li>
+<li>log <strong>any data in scope at that point of execution</strong>: this will be a huge help to be able to reproduce the issue.</li>
 </ul>
 
 
 <h3>Changing log level dynamically</h3>
 
-<p>Logging libraries like Logback (and Log4J also) lets you change log level at runtime without having to bring down and restart the application.</p>
+<p>Logging libraries like Logback (and Log4J too) lets you <strong>change log level at runtime</strong> without having to bring down and restart the application.</p>
 
-<p>That is a very powerful feature you can use for example to turn the log level to DEBUG when a certain issue is happening in production. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.</p>
+<p>That is a very powerful feature you can use for example to turn the log level to DEBUG when an application running in production is not behaving as expected but it is not throwing any error. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.</p>
 
 <p>The ways you can expose this operation can be different and depends on the type of application you are working on: just a restricted access web page can be enough or I also used to implement a specific HTTP endpoint when the application consisted of a REST service.</p>
 
@@ -62,11 +107,11 @@
 
 <p>If you use conventions on how you log domain specific data and errors it will be much easier to retrieve them (both for a human and for automated indexing systems).</p>
 
-<p>For example if I&rsquo;m logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I&rsquo;m doing that: for example something like: &ldquo;Response &rdquo; &ndash; endpoint name &ndash; http status code &ndash; body .</p>
+<p>For example if I&rsquo;m logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I&rsquo;m doing that: for example something like: <code>"Response " - endpoint name - http status code - body</code>.</p>
 
-<h3>Make a distinction between logs and metrics</h3>
+<h3>Keep logs and metrics separate</h3>
 
-<p>Leave out from log files what actually represents more <strong>metrics</strong> and/or <strong>analytics</strong> data that should be handled using more powerful tools (for example <strong>StatsD/Graphite</strong>) to aggregate and visualize them &ndash; talking about this would require another post.</p>
+<p>Leave out from log files what actually represents more <strong>metrics</strong> and/or <strong>analytics</strong> data: they should be handled using more powerful tools (for example <strong>StatsD/Graphite</strong>) to aggregate and visualize them &ndash; talking about this would require another post.</p>
 
 <p>Examples of this data are hit counters, error counters, execution times, order amounts, &hellip; .</p>
 ]]></content>
