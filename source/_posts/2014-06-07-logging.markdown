@@ -28,17 +28,44 @@ Ah! Don't forget to make sure you **obfuscate** any **sensitive data** if they a
 
 ### Logging errors
 
-When you are handling an error in your code always make sure:
+Please never do this:
+```java
+try{
+  ...
+} catch (YourException exc) {
+  LOGGER.error("An error happened!");
+}
+```
+
+A bit better (at least you'll have the complete stack trace of the exception):
+```java
+try{
+  ...
+} catch (YourException exc) {
+  LOGGER.error("An error happened!", exc);
+}
+```
+
+Much better (you'll be able to see the full stack trace of the exception and data that caused it):
+```java
+try{
+  ...
+} catch (YourException exc) {
+  LOGGER.error("An error happened while processing: " + inputData, exc);
+}
+```
+
+To summarize: when you are handling an error in your code always make sure:
 
 * log it at **ERROR** level;
 * log the complete stack trace of the error;
-* log any data in scope in that point of execution: this will be an incredible help to be able to reproduce the issue.
+* log **any data in scope at that point of execution**: this will be a huge help to be able to reproduce the issue.
 
 ### Changing log level dynamically
 
-Logging libraries like Logback (and Log4J also) lets you change log level at runtime without having to bring down and restart the application.
+Logging libraries like Logback (and Log4J too) lets you **change log level at runtime** without having to bring down and restart the application.
 
-That is a very powerful feature you can use for example to turn the log level to DEBUG when a certain issue is happening in production. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.
+That is a very powerful feature you can use for example to turn the log level to DEBUG when an application running in production is not behaving as expected but it is not throwing any error. Also, you can do that for the all application (root logger) or just for a specific package or even for a specific class only.
 
 The ways you can expose this operation can be different and depends on the type of application you are working on: just a restricted access web page can be enough or I also used to implement a specific HTTP endpoint when the application consisted of a REST service.
 
@@ -46,10 +73,10 @@ The ways you can expose this operation can be different and depends on the type 
 
 If you use conventions on how you log domain specific data and errors it will be much easier to retrieve them (both for a human and for automated indexing systems).
 
-For example if I'm logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I'm doing that: for example something like: "Response " - endpoint name - http status code - body .
+For example if I'm logging the responses for a suite of REST APIs I better use the same format for all the endpoints where I'm doing that: for example something like: `"Response " - endpoint name - http status code - body`.
 
-### Make a distinction between logs and metrics
+### Keep logs and metrics separate
 
-Leave out from log files what actually represents more **metrics** and/or **analytics** data that should be handled using more powerful tools (for example **StatsD/Graphite**) to aggregate and visualize them - talking about this would require another post.
+Leave out from log files what actually represents more **metrics** and/or **analytics** data: they should be handled using more powerful tools (for example **StatsD/Graphite**) to aggregate and visualize them - talking about this would require another post.
 
 Examples of this data are hit counters, error counters, execution times, order amounts, ... .
