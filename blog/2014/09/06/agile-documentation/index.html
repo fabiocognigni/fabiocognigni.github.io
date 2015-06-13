@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>welcome - </title>
+  <title>Agile documentation, logging and metrics - </title>
   <meta name="author" content="Fabero">
 
   
-  <meta name="description" content="Why this blog? Basically because if you love Open Source it means you love sharing your code but also the experiences (good and bad!) behind it, tips &hellip;">
+  <meta name="description" content="Tight, hard deadlines on critical projects are not fun to deal with but fortunately an Agile process is a huge help to deliver timely while giving &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://fabiocognigni.github.io/blog/2014/05/19/welcome">
+  <link rel="canonical" href="http://fabiocognigni.github.io/blog/2014/09/06/agile-documentation">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml">
@@ -69,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Welcome</h1>
+      <h1 class="entry-title">Agile Documentation, Logging and Metrics</h1>
     
     
       <p class="meta">
@@ -85,16 +85,46 @@
   
 
 
-<time datetime="2014-05-19T17:51:19+01:00" pubdate data-updated="true">May 19<span>th</span>, 2014</time>
+<time datetime="2014-09-06T23:27:09+01:00" pubdate data-updated="true">Sep 6<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Why this blog?</p>
+<div class="entry-content"><p>Tight, hard deadlines on critical projects are not fun to deal with but fortunately an <strong>Agile process</strong> is a huge help to deliver timely while giving the whole team (and all upperloards!) visibility on progresses.</p>
 
-<p>Basically because if you love Open Source it means you love sharing your code but also the experiences (good and bad!) behind it, tips, lessons learned &hellip; and a blog is a great way to do so!</p>
+<p>But still these are the occasions when you tend to leave behind some important aspects: documentation, accurate logging and metrics to have visibility on how the system performs.</p>
+
+<p>So all that happiness for having delivered your project in time (or ahead of time!) has to immediately leave space to a not so exciting week (or more that a week) spent adding <a href="http://fabiocognigni.github.io/blog/2014/06/07/logging/">accurate logging</a>, metrics on performances, load handled, analytics and writing documentation for all the functionalities (worst case, textual documentation; best case, swagger in case of Restful APIs).</p>
+
+<!--more-->
+
+
+<p>A great way not to get there was for me applying a process that can be summarized with the below points:</p>
+
+<ol>
+<li>pick a new story from the team wall;</li>
+<li>TDD to implement the new feature;</li>
+<li>add system metrics recording (execution times, hit counters, error counters, &hellip;);</li>
+<li>add &ldquo;business&rdquo; metrics/analytics (e.g. total amount for an order processed, credit card type used, orders with promotions, &hellip;);</li>
+<li>add the documentation (not the in-line code doc but final-user doc) on the new feature and update parts of the existing documentation if needed to keep it consistent;</li>
+<li>open a PR;</li>
+<li>have it reviewed (note that having added documentation, logging and metrics makes reviewer life much easier);</li>
+<li>merge to trunk (or to the long term development environment);</li>
+<li>move the story to &ldquo;dev complete&rdquo;;</li>
+<li>QA work will also include check the logs and metrics added;</li>
+</ol>
+
+
+<p>The advantages of this approach are the followings:
+* better quality and more accurate documentation just because you write it right after you implemented a specific piece and you then have all the details fresh in mind;
+* same for adding meaningful logging and recording useful metrics;
+* at any point in time everything done so far is well documented and this <strong>facilitates on-boarding of new team members</strong> joining in the middle of the project.</p>
+
+<p>The begin can be tough but then they become natural steps of the entire process leading to greater quality and much better team-working.</p>
+
+<p>In case documentation is not needed because the new feature is something to be used internally in your organization, good for you, but still an accurate description of your work (in addition to in-line code documentation, when needed) is always a good practice.</p>
 </div>
 
 
@@ -117,7 +147,7 @@
   
 
 
-<time datetime="2014-05-19T17:51:19+01:00" pubdate data-updated="true">May 19<span>th</span>, 2014</time>
+<time datetime="2014-09-06T23:27:09+01:00" pubdate data-updated="true">Sep 6<span>th</span>, 2014</time>
       
 
 
@@ -125,7 +155,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fabiocognigni.github.io/blog/2014/05/19/welcome/" data-via="" data-counturl="http://fabiocognigni.github.io/blog/2014/05/19/welcome/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fabiocognigni.github.io/blog/2014/09/06/agile-documentation/" data-via="" data-counturl="http://fabiocognigni.github.io/blog/2014/09/06/agile-documentation/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -138,8 +168,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/06/07/logging/" title="Previous Post: logging">&laquo; logging</a>
       
-        <a class="basic-alignment right" href="/blog/2014/05/21/qa-martin-odersky/" title="Next Post: Q&A with Martin Odersky at HBC Digital">Q&A with Martin Odersky at HBC Digital &raquo;</a>
       
     </p>
   </footer>
@@ -202,8 +232,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://fabiocognigni.github.io/blog/2014/05/19/welcome/';
-        var disqus_url = 'http://fabiocognigni.github.io/blog/2014/05/19/welcome/';
+        var disqus_identifier = 'http://fabiocognigni.github.io/blog/2014/09/06/agile-documentation/';
+        var disqus_url = 'http://fabiocognigni.github.io/blog/2014/09/06/agile-documentation/';
         var disqus_script = 'embed.js';
       
     (function () {
