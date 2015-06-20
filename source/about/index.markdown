@@ -10,15 +10,13 @@ footer: false
 
 ## Who is Fabio Cognigni?
 
-Hi!
+I am a Software Engineer passionate about combining Open Source technologies, Agile methodologies and technical best practices to deliver high quality software.
 
-I am a Software Engineer passionate about using Open Source technologies and adopting Agile methodologies as means to produce high quality software having fun and being creative.
+I love being driven by curiosity, "thinking outside of the box" and explore new solutions and technologies.
 
-I love being driven by curiosity and "thinking outside of the box" to explore new solutions and tackle increasingly complex problems by adopting new technologies.
+Key drivers of my work are: clean architecture design, quality of code, automated processes, systems visibility and measurability.
 
-Key concepts I believe in: quality of code, automated processes, systems visibility and measurability.
-
-I am a practical thinker that strives everyday for pushing real systems as close as possible to excellence.
+I am a practical thinker that strives everyday to find simple solutions for complex problems, maximize the value delivered to customers and elaborate best practices and conventions to make development work easier and more effective.
 
 ## Specialties
 
@@ -53,10 +51,8 @@ I am a practical thinker that strives everyday for pushing real systems as close
 
 ## Contacts
 
-- <a href="mailto:fabio.cognigni@gmail.com">fabio.cognigni@gmail.com</a> 
+- <a href="mailto:fabio.cognigni@gmail.com">fabio.cognigni@gmail.com</a>
 - [fabiocognigni.github.io](http://fabiocognigni.github.io)
 - [github.com/fabiocognigni](http://github.com/fabiocognigni)
 - [linkedin.com/fabio-cognigni](http://linkedin.com/pub/fabio-cognigni/4/a88/980)
 - [@faberoh](http://twitter.com/faberoh)
-
-
