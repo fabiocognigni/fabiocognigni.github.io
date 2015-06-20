@@ -16,7 +16,7 @@ I love being driven by curiosity, "thinking outside of the box" and explore new 
 
 Key drivers of my work are: clean architecture design, quality of code, automated processes, systems visibility and measurability.
 
-I am a practical thinker that strives everyday to find simple solutions for complex problems, maximize the value delivered to customers and elaborate best practices and conventions to make development work easier and more effective.
+I am a practical thinker that strives everyday to find simple solutions for complex problems, maximize the delivered business value and advocate best practices and conventions to make development work easier and more effective.
 
 ## Specialties
 
